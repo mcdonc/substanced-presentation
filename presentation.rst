@@ -25,7 +25,7 @@ A Scanner Darkly
 
    <center>
       <div style="padding-bottom: 20px; padding-top: 20px;">PKD was my kind of guy!</div>
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/eLeC28enMr0" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="http://www.youtube.com/embed/oVnvilLFk2Y" frameborder="0" allowfullscreen></iframe>
    </center>
 
 .. class:: handout
