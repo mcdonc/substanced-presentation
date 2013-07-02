@@ -38,13 +38,20 @@ Features
 Substance D is an application server.  It provides the following features:
 
 - Facilities that allow developers to define "content" (e.g. "a blog entry", "a
-  product", or "a news item", etc).
+  product", or "a news item", etc) via plain old Python.
 
 - A management (aka "admin") web UI which allows nonexpert but privileged users
   to create, edit, update, and delete developer-defined content as well as
   managing other aspects of the system such as users, groups, security, etc.
 
 Features (2)
+------------
+
+The "SDI" (Substance D Interface):
+
+.. image:: sdi.png
+
+Features (3)
 ------------
 
 - "Undo" capability for actions taken via the management UI.
@@ -55,7 +62,7 @@ Features (2)
 
 - Built-in users and groups management.
 
-Features (3)
+Features (4)
 ------------
 
 - Built-in content workflow.
@@ -65,7 +72,7 @@ Features (3)
 - A facility for relating content objects to each other (with optional
   referential integrity).
 
-Features (4)
+Features (5)
 ------------
 
 - An "evolve" mechanism for evolving content over time as it changes.
@@ -74,6 +81,12 @@ Features (4)
   human-readable format, and a mechanism to reload a dump into the system.
 
 - An audit log for high security environments.
+
+Demonstrations
+--------------
+
+- Talks are boring, let's just take a look at the features I just mentioned in
+  action.
 
 Built On
 --------
@@ -100,6 +113,9 @@ Relationship with Zope
   effort.  It outsources all of its low-level routing functionality to Pyramid
   (Zope doesn't have an equivalent base layer).
 
+Relationship with Zope (2)
+---------------------------
+
 - Zope does things that Substance D does not: "through the web" development,
   omnipresent WebDAV, omnipresent XML-RPC.  These may become available as
   add-ons to Substance D later (although more likely the latter 2 than the
@@ -115,12 +131,18 @@ Is It A CMS?
 - If your site is dynamic, you can use Substance D to create it.  Particularly
   if you can naturally think of your data as treelike.
 
+Plans
+-----
+
+- A release!  Currently there is none.  ETA unknown.
+
 Production Sites
 ----------------
 
 - KUIU:  https://store.kuiu.com
 
 - Environmental Health News: http://www.environmentalhealthnews.org/
+
 
 Contact Info
 ------------
