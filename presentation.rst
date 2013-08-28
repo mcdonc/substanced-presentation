@@ -41,8 +41,7 @@ Substance D is an application server.  It provides the following features:
   product", or "a news item", etc) via plain old Python.
 
 - A management (aka "admin") web UI which allows nonexpert but privileged users
-  to create, edit, update, and delete developer-defined content as well as
-  managing other aspects of the system such as users, groups, security, etc.
+  to create, edit, update, and delete developer-defined content.
 
 Features (2)
 ------------
@@ -54,44 +53,51 @@ The "SDI" (Substance D Interface):
 Features (3)
 ------------
 
-- "Undo" capability for actions taken via the management UI.
+- The SDI is a view of a hierarchical content space.
 
-- A way to make granular hierarchical security declarations for content
-  objects. "Bob can edit *this* post" or "Bob can edit all posts in this
-  collection" as opposed to just "Bob can edit posts".
+- It also allows for managing aspects of the system such as users,
+  groups, security, database connections, etc.
 
-- Built-in users and groups management.
+- There is "Undo" capability for actions taken via the management UI.
 
 Features (4)
 ------------
+
+- It provides a way to make granular hierarchical security declarations for
+  content objects.
 
 - Built-in content workflow.
 
 - Indexing and searching of content (field, keyword, facet, and full-text).
 
-- A facility for relating content objects to each other (with optional
-  referential integrity).
-
 Features (5)
 ------------
+
+- A facility for relating content objects to each other (with optional
+  referential integrity).
 
 - An "evolve" mechanism for evolving content over time as it changes.
 
 - A mechanism to dump your site's content to the filesystem in a mostly
   human-readable format, and a mechanism to reload a dump into the system.
 
+Features (6)
+------------
+
 - An audit log for high security environments.
+
+- Runs under Python 2 and 3.
 
 Demonstrations
 --------------
 
-- Talks are boring, let's just take a look at the features I just mentioned in
-  action.
+- Talks are pretty boring, let's just take a look at the features I just
+  mentioned in action.
 
 Built On
 --------
 
-Substance D is built upon on the following technologies:
+Substance D is built upon on the following stuff:
 
 - `ZODB <http://zodb.org>`_
 
@@ -134,7 +140,15 @@ Is It A CMS?
 Plans
 -----
 
-- A release!  Currently there is none.  ETA unknown.
+- A release!  Currently there is none.
+
+- Release date mostly depends on how fast we can implement UI improvements and
+  dumping and loading improvements.
+
+Development
+-----------
+
+- On GitHub in the Pylons Project: https://github.com/Pylons/substanced
 
 Production Sites
 ----------------
