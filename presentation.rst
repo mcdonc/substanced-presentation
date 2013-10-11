@@ -22,14 +22,25 @@ A civilized way to build web applications.
 
 ----
 
-Who Am I
-========
+:raw-html:`<i class="icon-4x icon-male" style="color: #30A9C5"> </i>`
 
-Came to Python 1999.  Worked at Digital Creations (aka Zope
-Corporation) until 2003.  Now a principal of Agendaless Consulting in
-Fredericksburg, VA, US.
+by Chris McDonough
 
 ----
+
+.. image:: dclogo.jpg
+
+Worked at Digital Creations (aka Zope Corporation) 2000-2003.
+
+----
+
+.. image:: agendaless.png
+
+Now a principal of Agendaless Consulting in Fredericksburg, VA, US.
+
+----
+
+:raw-html:`<i class="icon-keyboard icon-4x" style="color: #30A9C5"> </i>`
 
 Primary author of ``Pyramid`` web framework, ``Supervisor`` UNIX process 
 control system, ``Deform`` form system, ``Colander`` serialization system, 
@@ -38,54 +49,82 @@ of ``WebOb`` and other stuff that folks have left behind.
 
 ----
 
-A Scanner Darkly
-================
+PKD's A Scanner Darkly
+======================
 
-.. raw:: html
+.. image:: sdcup.jpg
 
-   <center>
-      <div style="padding-bottom: 20px; padding-top: 20px;">PKD was my kind of guy!</div>
-      <iframe width="560" height="315" src="http://www.youtube.com/embed/oVnvilLFk2Y" frameborder="0" allowfullscreen></iframe>
-   </center>
+..
+   .. raw:: html
 
-.. class:: note
+      <center>
+         <div style="padding-bottom: 20px; padding-top: 20px;">PKD was my kind of guy!</div>
+         <iframe width="560" height="315" src="http://www.youtube.com/embed/oVnvilLFk2Y" frameborder="0" allowfullscreen></iframe>
+      </center>
 
-   http://www.youtube.com/watch?v=eLeC28enMr0
+   .. class:: note
 
-----
-
-Substance D is an "application server" (anybody have a better name?).
-
-----
-
-Allows developers to define "content" (e.g. "a blog entry", "a
-product", or "a news item", etc) via plain old Python.
+      http://www.youtube.com/watch?v=eLeC28enMr0
 
 ----
 
-The "SDI" (Substance D Interface):
+:raw-html:`<i class="icon-meh icon-4x pull-left" style="color: #30A9C5;"> </i>` Substance D is an
+"application server" (anybody have a better name?).
+
+----
+
+Developers define "content" (e.g. a blog entry, a product for sale, or a news
+item, etc) via plain-old-Python.
+
+----
+
+The "SDI"
+=========
 
 .. image:: sdi.png
 
 ----
 
-:raw-html:`<i class="icon-camera-retro icon-4x pull-left"> </i>` The SDI is a management (aka 
-"admin") web UI which allows nonexpert but privileged users to create, edit, 
-update, and delete developer-defined content.
+:raw-html:`<i class="icon-desktop icon-4x pull-left" style="color: #005F6B"> </i>` 
+
+The SDI allows nonexpert but privileged users to create, edit, update, and
+delete developer-defined content.
 
 ----
 
 The SDI is a view of a hierarchical content space, something like a filesystem.
 
-----
+:raw-html:`<i class="icon-sitemap icon-4x" style="color: #005F6B"> </i>` 
 
-The SDI also allows for managing slightly less "contenty" aspects of the system 
-such as users, groups, ACLs, and database connections.
 
 ----
 
-The SDI is "real-time"; you see content and structure changes as they happen 
-without any page reloads.
+:raw-html:`<i class="icon-lock icon-4x pull-left" style="color:#005F6B"> </i>` 
+:raw-html:`<i class="icon-user icon-4x pull-left" style="color:#005F6B"> </i>` 
+
+The SDI also allows for managing less contenty aspects of the
+system: users, groups, ACLs, and database connections.
+
+----
+
+:raw-html:`<i class="icon-link icon-4x pull-left" style="color: #005F6B"> </i>` 
+
+The SDI is "real-time"; see content and structure changes as they happen 
+without page reloads.
+
+
+----
+
+The SDI is extensible.
+
+:raw-html:`<i class="icon-paperclip icon-4x" style="color: #005F6B"> </i>` 
+
+----
+
+:raw-html:`<i class="icon-smile icon-4x pull-left" style="color: #005F6B"> </i>` 
+
+If you put the SDI in front of your admin users, you'll probably need to write
+less code.
 
 ----
 
@@ -94,45 +133,66 @@ Unique Features
 
 ----
 
-There is an "Undo" capability for actions taken via the SDI, or any action
-invoked against the database programmatically.
+:raw-html:`<i class="icon-undo icon-4x pull-left" style="color: red"> </i>` 
+
+Undo actions taken via the SDI, or any action invoked against the database
+programmatically.
 
 ----
 
-You can manage hierarchical security declarations attached to content objects.
+:raw-html:`<i class="icon-lock icon-4x pull-left" style="color:red"> </i>` 
+
+Manage hierarchical security declarations attached to content objects.
 
 ----
 
-Substance D provides content workflow.
+Content workflow.
+
+:raw-html:`<i class="icon-comments icon-4x" style="color:red"> </i>` 
+
 
 ----
 
-Substance D provides indexing and searching of content via field, keyword, 
+:raw-html:`<i class="icon-search icon-4x pull-left" style="color:red"> </i>` 
+
+Indexing and searching of content via field, keyword, 
 facet, and full-text indexes.
 
 ----
 
-A facility exists for relating content objects to each other, with optional
+:raw-html:`<i class="icon-magnet icon-4x pull-left" style="color:red"> </i>` 
+
+Relate content objects to each other, with optional
 referential integrity.
 
 ----
 
-An "evolve" mechanism allows you to evolve database content over time as 
-your code changes.
+:raw-html:`<i class="icon-fast-forward icon-4x pull-left" style="color:red"> </i>` 
+
+Evolve database content over time as your code changes.
 
 ----
 
-A dump facility pushes your site's content to the filesystem in a mostly
-human-readable format.  A load mechanism allows you to to reload a dump into 
-the system.
+:raw-html:`<i class="icon-save icon-4x pull-left" style="color:red"> </i>` 
+
+Dump your site's content to the filesystem in a mostly human-readable format.
+Reload a dump into the system.
 
 ----
+
+:raw-html:`<i class="icon-copy icon-4x pull-left" style="color:red"> </i>` 
 
 An audit log feature exists for high security environments.
 
 ----
 
-Substance D runs under either Python 2 or Python 3.
+Built-in monitoring hooks.
+
+:raw-html:`<i class="icon-dashboard icon-4x" style="color:red"> </i>` 
+
+----
+
+Runs under either Python 2 or Python 3.
 
 ----
 
@@ -158,44 +218,34 @@ Built With
 
 ----
 
-Relationship with Zope
-======================
-
-----
-
-"Seriously?  The Z word?  You're going there huh?"
-
-----
-
-Substance D is effectively a reimplementation of Zope 2.  Its user interface
-and content storage model is heavily influenced by Zope 2's.
-
-----
-
-It, howevever, shares no DNA with Zope, save for ZODB.  It's a "from scratch"
-effort.  It outsources all of its low-level routing functionality to Pyramid
-(Zope doesn't have an equivalent base layer).
-
-----
-
-Zope does things that Substance D does not.  For example, Zope allows for 
-"through the web" development.  Substance D does not.
-
-----
-
 Is It A CMS?
 ============
 
 ----
 
-Who knows.  Maybe not a useful term.  I've been doing "CMS" for ~ 12 years
-and I don't really know what CMS means.  Apparently some sites don't have any
-content?
+I don't know, but I don't think so.  I've been doing "CMS" for 12 years and I
+don't really know what it means.
 
 ----
 
 If your site is dynamic, you can use Substance D to create it.  Particularly
 if you can naturally think of your data as treelike.
+
+----
+
+Production Sites
+================
+
+----
+
+KUIU
+  https://store.kuiu.com
+
+Environmental Health News
+  http://www.environmentalhealthnews.org/
+
+The Daily Climate
+  http://dailyclimate.org/
 
 ----
 
@@ -218,15 +268,8 @@ News/FAQ/docs via http://substanced.net
 
 ----
 
-Production Sites
-================
+Questions
+=========
 
-KUIU
-  https://store.kuiu.com
-
-Environmental Health News
-  http://www.environmentalhealthnews.org/
-
-The Daily Climate
-  http://dailyclimate.org/
+:raw-html:`<i class="icon-question-sign icon-4x" style="color:red"> </i>` 
 
