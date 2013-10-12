@@ -304,22 +304,22 @@ The Daily Climate
 
 ----
 
-Plans
-=====
+Release Plan
+============
 
-A release!  Currently there is none.
-
-Release date mostly depends on how fast we can address issues in the Github
-issue tracker.
+First alpha release date depends on how fast we can address issues in the
+Github issue tracker.
 
 ----
 
 Development
 ===========
 
-On GitHub in the Pylons Project: https://github.com/Pylons/substanced
+On GitHub in the Pylons Project
+  https://github.com/Pylons/substanced
 
-News/FAQ/docs via http://substanced.net
+News/FAQ/docs
+  http://substanced.net
 
 ----
 
