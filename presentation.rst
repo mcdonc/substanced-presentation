@@ -24,7 +24,14 @@ A civilized way to build web applications.
 
 :raw-html:`<i class="icon-4x icon-male" style="color: #30A9C5"> </i>`
 
-by Chris McDonough
+by Chris McDonough (@chrismcdonough on twitter, "mcdonc" on freenode irc)
+
+.. note::
+
+   Thanks for having me here and thank the organizers, particularly Baptiste.
+   Sorry for being sick.
+
+   Mostly demo.
 
 ----
 
@@ -35,6 +42,8 @@ Worked at Digital Creations (aka Zope Corporation) 2000-2003.
 ----
 
 .. image:: agendaless.png
+
+.. image:: for-hire.jpg
 
 Now a principal of Agendaless Consulting in Fredericksburg, VA, US.
 
@@ -62,7 +71,8 @@ Now a principal of Agendaless Consulting in Fredericksburg, VA, US.
    :align: right
    :scale: 200%
 
-..
+.. note::
+
    Primary author of ``Pyramid`` web framework, ``Supervisor`` UNIX process 
    control system, ``Deform`` form system, ``Colander`` serialization system, 
    ``Repoze``  collection of middleware, and other unmentionables. Maintainer 
@@ -75,6 +85,8 @@ Now a principal of Agendaless Consulting in Fredericksburg, VA, US.
 
 ----
 
+:raw-html:`<i class="icon-file icon-4x pull-left" style="color: #30A9C5;"> </i>`
+
 Developers define "content" (e.g. a blog entry, a product for sale, or a news
 item, etc) via plain-old-Python.
 
@@ -82,7 +94,7 @@ item, etc) via plain-old-Python.
 
 :raw-html:`<i class="icon-save icon-4x" style="color: #30A9C5;"> </i>`
 
-Content is stored in an object database.
+Content is stored in an object database as a tree.
 
 ----
 
@@ -90,18 +102,6 @@ PKD's A Scanner Darkly
 ======================
 
 .. image:: sdcup.jpg
-
-..
-   .. raw:: html
-
-      <center>
-         <div style="padding-bottom: 20px; padding-top: 20px;">PKD was my kind of guy!</div>
-         <iframe width="560" height="315" src="http://www.youtube.com/embed/oVnvilLFk2Y" frameborder="0" allowfullscreen></iframe>
-      </center>
-
-   .. class:: note
-
-      http://www.youtube.com/watch?v=eLeC28enMr0
 
 ----
 
@@ -143,16 +143,10 @@ without page reloads.
 
 ----
 
-The SDI is extensible.
+The SDI is extensible.  If you can live inside some constraints, you won't need
+to write as much admin code.
 
 :raw-html:`<i class="icon-paperclip icon-4x" style="color: #005F6B"> </i>` 
-
-----
-
-:raw-html:`<i class="icon-smile icon-4x pull-left" style="color: #005F6B"> </i>` 
-
-If you put the SDI in front of your admin users, you'll probably need to write
-less code.
 
 ----
 
@@ -232,52 +226,50 @@ Because talks are pretty boring.
 .. note::
 
    - Developers define "content" (e.g. a blog entry, a product for sale, 
-     or a news item, etc) via plain-old-Python.
+     or a news item, etc) via plain-old-Python.  (sdidemo/resources.py)
 
-   - Content is stored in an object database.  
+   - The SDI is a view of a hierarchical content space, something like a
+     filesystem.  The SDI allows users to create, edit, update, and delete
+     developer-defined content.  (sdidemo UI).
 
-   - The SDI allows nonexpert but privileged users to create, edit, 
-     update, and delete developer-defined content.
-
-   - The SDI is a view of a hierarchical content space, something like a 
-     filesystem.
-
-   - The SDI also allows for managing less contenty aspects of the
-     system: users, groups, ACLs, and database connections.
-
-   - The SDI is "real-time"; see content and structure changes as they happen
-     without page reloads.
-
-   - The SDI is extensible.
-
-   - If you put the SDI in front of your admin users, you'll probably need to
-     write less code.
+   - Views are defined against types.  The URL is a path through a tree plus an
+     optional view name.  (@@properties)
 
    - Undo actions taken via the SDI, or any action invoked against the database
-     programmatically.
+     programmatically.  (undo the actions I just took).
 
-   - Manage hierarchical security declarations attached to content objects.
+   - Content is stored in an object database.  (pshell of sdidev)
 
-   - Workflow content.
+   - The SDI also allows for managing less contenty aspects of the
+     system: users, groups, and database management. (sdidemo
+     database, data evolution, users & groups).
 
-   - Indexing and searching of content via field, keyword, 
-     facet, and full-text indexes.
+   - SDI is security filtered (sdidemo: protect jimmybob folder with (Allow, 
+     admin, sdi.view) and no inherit, log in as "notadmin").  Note hierarchical
+     nature and ability to protect a subtree.
 
-   - Relate content objects to each other, with optional
-     referential integrity.
+   - The SDI is "real-time"; see content and structure changes as they happen
+     without page reloads.  (Side by side windows on workspace 2.)
 
-   - Evolve database content over time as your code changes.
+   - Grid can handle many objects (EHN posts view)
+
+   - The SDI is extensible.  (EHN sites/ehn/staging/@@compose_edition view)
+
+   - Capture site activity using an audit log. (Show audit log in sdidev).
+
+   - Built-in performance monitoring hooks. (datadog)
+
+   - Indexing and searching of content via field, keyword, facet, and full-text
+     indexes.  (yss.views.song:query).
+
+   - Relate content objects to each other, with optional referential integrity.
+     (Song SDI in youshouldsing).
+
+   - Workflow content.  (Agendaless.com workflow)
 
    - Dump your site's content to the filesystem in a mostly human-readable
-     format.
-
-   - Reload a dump into the system.
-
-   - Capture site activity using an audit log.
-
-   - Built-in performance monitoring hooks.
-
-   - Runs under either Python 2 or Python 3.
+     format and reload a dump into the system.  (see kuiu ecommbuildout
+     dump).
 
 ----
 
@@ -288,26 +280,11 @@ Built With
 
 `Pyramid <http://pylonsproject.org>`_
 
-`hypatia <https://github.com/Pylons/hypatia>`_
+`Hypatia <https://github.com/Pylons/hypatia>`_
 
-`colander <http://docs.pylonsproject.org/projects/colander/en/latest/>`_
+`Colander <http://docs.pylonsproject.org/projects/colander/en/latest/>`_
 
-`deform <http://docs.pylonsproject.org/projects/deform/en/latest/>`_
-
-----
-
-Is It A CMS?
-============
-
-----
-
-I don't know, but I don't think so.  I've been doing "CMS" for 12 years and I
-don't really know what it means.
-
-----
-
-If your site is dynamic, you can use Substance D to create it.  Particularly
-if you can naturally think of your data as treelike.
+`Deform <http://docs.pylonsproject.org/projects/deform/en/latest/>`_
 
 ----
 
