@@ -197,8 +197,8 @@ Evolve database content over time as your code changes.
 
 :raw-html:`<i class="icon-save icon-4x pull-left" style="color:red"> </i>` 
 
-Dump your site's content to the filesystem in a mostly human-readable format.
-Reload a dump into the system.
+Dump and load your site's content to/from the filesystem in a mostly
+human-readable format.
 
 ----
 
@@ -208,13 +208,13 @@ Capture site activity using an audit log.
 
 ----
 
-Built-in performance monitoring hooks.
+Monitor system performance using built-in hooks.
 
 :raw-html:`<i class="icon-dashboard icon-4x" style="color:red"> </i>` 
 
 ----
 
-Runs under either Python 2 or Python 3.
+Run under either Python 2 or Python 3.
 
 ----
 
@@ -322,9 +322,6 @@ On GitHub in the Pylons Project: https://github.com/Pylons/substanced
 News/FAQ/docs via http://substanced.net
 
 ----
-
-Questions
-=========
 
 :raw-html:`<i class="icon-question-sign icon-4x" style="color:red"> </i>` 
 
