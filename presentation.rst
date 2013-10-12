@@ -40,12 +40,49 @@ Now a principal of Agendaless Consulting in Fredericksburg, VA, US.
 
 ----
 
-:raw-html:`<i class="icon-keyboard icon-4x" style="color: #30A9C5"> </i>`
+.. image:: pyramid-small.png
+   :align: left
+   :scale: 200%
 
-Primary author of ``Pyramid`` web framework, ``Supervisor`` UNIX process 
-control system, ``Deform`` form system, ``Colander`` serialization system, 
-``Repoze``  collection of middleware, and other unmentionables.  Maintainer 
-of ``WebOb`` and other stuff that folks have left behind.
+:raw-html:`<br/>`
+
+.. image:: pylons-small.png
+   :align: right
+   :scale: 200%
+
+:raw-html:`<br/>`
+
+.. image:: supervisor_logo.gif
+   :align: left
+   :scale: 200%
+
+:raw-html:`<br/>`
+
+.. image:: repozelogo.gif
+   :align: right
+   :scale: 200%
+
+..
+   Primary author of ``Pyramid`` web framework, ``Supervisor`` UNIX process 
+   control system, ``Deform`` form system, ``Colander`` serialization system, 
+   ``Repoze``  collection of middleware, and other unmentionables. Maintainer 
+   of ``WebOb`` and other stuff that folks have left behind.
+
+----
+
+:raw-html:`<i class="icon-meh icon-4x pull-left" style="color: #30A9C5;"> </i>` Substance D is an
+"application server" (let me know if you have a better name).
+
+----
+
+Developers define "content" (e.g. a blog entry, a product for sale, or a news
+item, etc) via plain-old-Python.
+
+----
+
+:raw-html:`<i class="icon-save icon-4x" style="color: #30A9C5;"> </i>`
+
+Content is stored in an object database.
 
 ----
 
@@ -68,15 +105,6 @@ PKD's A Scanner Darkly
 
 ----
 
-:raw-html:`<i class="icon-meh icon-4x pull-left" style="color: #30A9C5;"> </i>` Substance D is an
-"application server" (anybody have a better name?).
-
-----
-
-Developers define "content" (e.g. a blog entry, a product for sale, or a news
-item, etc) via plain-old-Python.
-
-----
 
 The "SDI"
 =========
@@ -146,7 +174,7 @@ Manage hierarchical security declarations attached to content objects.
 
 ----
 
-Content workflow.
+Workflow content.
 
 :raw-html:`<i class="icon-comments icon-4x" style="color:red"> </i>` 
 
@@ -182,11 +210,11 @@ Reload a dump into the system.
 
 :raw-html:`<i class="icon-copy icon-4x pull-left" style="color:red"> </i>` 
 
-An audit log feature exists for high security environments.
+Capture site activity using an audit log.
 
 ----
 
-Built-in monitoring hooks.
+Built-in performance monitoring hooks.
 
 :raw-html:`<i class="icon-dashboard icon-4x" style="color:red"> </i>` 
 
