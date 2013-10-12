@@ -229,6 +229,56 @@ Demonstrations
 
 Because talks are pretty boring.
 
+.. note::
+
+   - Developers define "content" (e.g. a blog entry, a product for sale, 
+     or a news item, etc) via plain-old-Python.
+
+   - Content is stored in an object database.  
+
+   - The SDI allows nonexpert but privileged users to create, edit, 
+     update, and delete developer-defined content.
+
+   - The SDI is a view of a hierarchical content space, something like a 
+     filesystem.
+
+   - The SDI also allows for managing less contenty aspects of the
+     system: users, groups, ACLs, and database connections.
+
+   - The SDI is "real-time"; see content and structure changes as they happen
+     without page reloads.
+
+   - The SDI is extensible.
+
+   - If you put the SDI in front of your admin users, you'll probably need to
+     write less code.
+
+   - Undo actions taken via the SDI, or any action invoked against the database
+     programmatically.
+
+   - Manage hierarchical security declarations attached to content objects.
+
+   - Workflow content.
+
+   - Indexing and searching of content via field, keyword, 
+     facet, and full-text indexes.
+
+   - Relate content objects to each other, with optional
+     referential integrity.
+
+   - Evolve database content over time as your code changes.
+
+   - Dump your site's content to the filesystem in a mostly human-readable
+     format.
+
+   - Reload a dump into the system.
+
+   - Capture site activity using an audit log.
+
+   - Built-in performance monitoring hooks.
+
+   - Runs under either Python 2 or Python 3.
+
 ----
 
 Built With
