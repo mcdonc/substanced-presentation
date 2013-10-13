@@ -24,7 +24,7 @@ A civilized way to build web applications.
 
 :raw-html:`<i class="icon-4x icon-male" style="color: #30A9C5"> </i>`
 
-by Chris McDonough (@chrismcdonough on twitter, "mcdonc" on freenode irc)
+by Chris McDonough (``@chrismcdonough`` on twitter, ``mcdonc`` on freenode irc)
 
 .. note::
 
@@ -51,25 +51,21 @@ Now a principal of Agendaless Consulting in Fredericksburg, VA, US.
 
 .. image:: pyramid-small.png
    :align: left
-   :scale: 200%
 
 :raw-html:`<br/>`
 
 .. image:: pylons-small.png
    :align: right
-   :scale: 200%
 
 :raw-html:`<br/>`
 
 .. image:: supervisor_logo.gif
    :align: left
-   :scale: 200%
 
 :raw-html:`<br/>`
 
 .. image:: repozelogo.gif
    :align: right
-   :scale: 200%
 
 .. note::
 
@@ -120,10 +116,10 @@ delete developer-defined content.
 
 ----
 
-The SDI is a view of a hierarchical content space, something like a filesystem.
+The SDI is a set of views against a hierarchical content space, something like
+a filesystem.
 
 :raw-html:`<i class="icon-sitemap icon-4x" style="color: #005F6B"> </i>` 
-
 
 ----
 
@@ -228,12 +224,15 @@ Because talks are pretty boring.
    - Developers define "content" (e.g. a blog entry, a product for sale, 
      or a news item, etc) via plain-old-Python.  (sdidemo/resources.py)
 
-   - The SDI is a view of a hierarchical content space, something like a
-     filesystem.  The SDI allows users to create, edit, update, and delete
+   - The SDI is a set of views of a hierarchical content space (something like
+     a filesystem).  The SDI allows users to create, edit, update, and delete
      developer-defined content.  (sdidemo UI).
 
    - Views are defined against types.  The URL is a path through a tree plus an
-     optional view name.  (@@properties)
+     optional view name.  (@@properties).  Extensibility on two levels:
+     adding content extends the URL space without needing to change a routing
+     map, adding a type allows you to extend the set of views.  Customers
+     who have customers, who have customers.
 
    - Undo actions taken via the SDI, or any action invoked against the database
      programmatically.  (undo the actions I just took).
